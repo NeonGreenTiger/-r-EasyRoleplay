@@ -1,0 +1,541 @@
+/* Style from /u/NeonGreenTiger. Feel free to use what you see. If you do, please give credit. */
+/* CSS Cleaned up at http://procssor.com/ */
+
+/*============================Pretty pretty CSS Sheet=================================*/
+.stylesheet-customize-container { width: 100%; }
+#subreddit_stylesheet { display: block; overflow: hidden; }
+.sheets { margin: 0;}
+#stylesheet_contents {
+  padding-left: 5px;
+  padding-top: 5px;
+  background-color: white;
+  color: #042eae;
+  height: 500px;
+}
+/*============================Body=================================*/
+/*Rounding out the tab corners*/
+.tabmenu li a {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    font-size: 1em;
+}
+
+/*background*/
+body {
+    background: url(%%clover%%) no-repeat fixed center center;
+}
+
+/* Makes the user names bold and red. */
+.thing .tagline a {
+    color: #F00;
+    text-decoration: none
+    }
+.thing .tagline a.friend, .author {
+    color: #F00;
+    font-weight: normal
+    }
+.thing .tagline a.author.submitter {
+    background: #F00!important;
+    color: #ffffff !important;
+    border-radius: 5px;
+    }
+.thing .tagline a.author.submitter:hover {
+    background: #F00!important;
+    color: #ffffff !important;
+    }
+.thing .tagline a.author.moderator {
+    color: white !important;
+    font-weight: bold !important;
+    padding: 0 2px 0 2px !important;
+    border-radius: 3px !important;
+    background-color: #228822 !important;
+    }
+.thing .tagline a.author.moderator:hover {
+    color: #F00!important;
+    font-weight: bold !important;
+    padding: 0 2px 0 2px !important;
+    border-radius: 3px !important;
+    border: 1px solid #228822;
+    background-color: white !important;
+    text-decoration: none !important;
+    }
+
+/* Last edit time stamp for posts */
+.edited-timestamp[title]:after {
+    content: " (" attr(title) ")";
+    font-size: 90%;
+}
+
+/*Alternating colors, snagged from /r/Cigars and modified.*/
+body div.content #siteTable div[class*="even"], .reddit-link {
+    border: none !important
+    }
+body div.content #siteTable div[class*="odd"] {
+    padding: 0;
+    border: 1px solid #000 !important;
+    border-radius: 10px;
+    margin-left: -1px !important;
+    }
+body div.content #siteTable {
+    padding: 5px 10px
+    }
+body div.content #siteTable div.link {
+    margin: 0 305px 0 0;
+    padding: 12px 15px
+    }
+
+
+/*Link colors*/
+#siteTable div.thing a.title { 
+    color: #000;
+}
+
+#siteTable div.thing a.title:visited {
+    color: #008A17;
+}
+
+/*=====================Flair=================================*/
+/*Link Flair*/
+.linkflair-one .linkflairlabel {
+    background-color: #008A17!important;
+    font-size: 11px;
+    font-weight: bold;
+    color:#000;
+    border-color: #000000;
+    border-width: 1px;
+    border-radius: 3px;
+}
+
+.linkflair-mod .linkflairlabel {
+    background-color: #008A17!important;
+    font-size: 11px;
+    font-weight: bold;
+    color:#000;
+    border-color: #000000;
+    border-width: 1px;
+    border-radius: 3px;
+}
+
+.linkflair-fv .linkflairlabel {
+    background-color: #008A17!important;
+    font-size: 11px;
+    font-weight: bold;
+    color:#000;
+    border-color: #000000;
+    border-width: 1px;
+    border-radius: 3px;
+}
+
+
+/*======================Sidebar========================================*/
+/* This is from /u/Sweet_nighmares */
+/***** Sidebar headings *****/
+.titlebox blockquote {
+    border: 1px solid #AAA;
+    text-shadow: 0 1px 0 white;
+    color: #787878; /*First header color*/
+    font-weight: bold;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px
+    }
+.sidecontentbox .content, .linkinfo, .footer {
+    background: transparent !important;
+    border: 1px solid #AAA;
+    margin: 7px 0 0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px
+    }
+.link.last-clicked {
+    overflow: hidden
+    }
+.linkinfo {
+    margin-bottom: 10px
+    }
+.titlebox {
+    padding: 10px;
+    background: transparent !important; /*Sidebar Background color*/
+    border: 1px solid #242424; /*Sidebar border color: #AAA*/
+    color: #242424; /*Text color in sidebar: #787878*/
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px
+    }
+.titlebox .bottom {
+    border: 0
+    }
+.titlebox form.toggle {
+    background-color: transparent
+    }
+.titlebox .usertext {
+    margin: 15px 0;
+    line-height: 120%;
+    font-size: small;
+    text-align: justify;
+    }
+.titlebox .usertext .md {
+    margin: 0;
+    padding: 0;
+    overflow: visible
+    }
+.titlebox .usertext .md h2 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #eee; /*Text color of ##*/
+    background-color: #008A17; /*Background color of ##:*/
+    }
+.titlebox .usertext .md > h1 {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: medium !important;
+    background-color: #F00; /*Background color of #: #3399cc*/
+    color: #eee; /*Text color of #*/
+    width: 288px;
+    padding: 5px 10px;
+    padding-left: 20px;
+    padding-right: 0;
+    margin-right: 13px;
+    margin-left: -18px;
+    border-bottom: 1px solid #F00; /*Border of #*/
+    margin-bottom: 5px;
+    margin-top: 10px;
+    z-index: 100
+    }
+.res-nightmode .usertext .md > h1 {
+background-color: #008A17; /*Nightmode fix for #*/
+border-bottom: 1px solid #228B22;
+}
+.titlebox .usertext .md > h1:after {
+    display: block;
+    content: "";
+    border-color: transparent #900 transparent transparent; 
+  /*Color of the little triangle^*/
+    border-style: solid;
+    border-width: 15px;
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    z-index: -1;
+    margin-left: -35px;
+    margin-top: -10px
+    }
+
+/*Collapsible menu*/
+.side { margin: 0px; }
+.side .titlebox .md h3 + ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 3px;
+    }
+.md { overflow: visible; }
+div.titlebox .md h3, div.titlebox .md h3 a, div.titlebox .md h2, div.titlebox .md h2 a, div.titlebox .md h4, div.titlebox .md h4 a {
+    color: #eee; /*General Header text color*/
+    }
+.sidecontentbox a.helplink {
+    margin-right: 5px;
+    }
+.icon-menu a {
+    background: transparent;
+    }
+div.titlebox .md h3 + ul {
+    display: none;
+    }
+div.titlebox .md h3:hover + ul, div.titlebox .md ul:hover {
+    display: block;
+    }
+div.titlebox .md ul li:hover {
+    background-color: #eee; 
+  /*Color you seen when ^ hovering over sidebar items*/
+    }
+.res-nightmode .titlebox .md ul li:hover {
+    background-color: #008A17;
+  /*Color you seen when ^ hovering over sidebar items- Nightmode*/
+    }
+div.titlebox .md h3, div.titlebox .md h2, div.titlebox .md h4 {
+    background-color: #008A17; /*### background color*/
+    color: #fff; /*### Text color*/
+    width: 280px;
+    line-height: 23px;
+    font-weight: normal;
+    font-size: 16px;
+    cursor: pointer;
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-left: -11px;
+    }
+.res-nightmode div.titlebox .md h3, div.titlebox .md h2, div.titlebox .md h4 { 
+background-color: #008A17; /*Nightmode background color: #7a9642*/
+}
+div.titlebox .md h3:after, div.titlebox .md h2:after, div.titlebox .md h4:after {
+    margin-bottom: 10px;}
+div.titlebox .md h3:before { 
+content: ""; 
+color: #fff; /*color of the + in ###*/
+padding-right: 5px; 
+} 
+div.titlebox ul {
+    line-height: 1.7em
+}
+
+
+/*Changes the name subscribers/users here now*/
+  .titlebox .word { display: none }
+  .titlebox .number:after { content: " Adventurers"; }
+  .titlebox .users-online span.number:after { content: " Adventurers here now"; }
+
+.side .md h6 a:hover {
+    text-decoration: underline;
+    }
+
+.author{font-weight: bold}
+.author[href$="AutoModerator"]{font-size: 0px}
+  .author[href$="AutoModerator"]:after{content: "Swift Justice";}
+
+/*===============non-subscriber messages============================*/
+/*No downvoting unless subscribed*/
+body:not(.subscriber) .down
+{ 
+    visibility: hidden !important;
+}
+body:not(.subscriber) #siteTable:before
+{
+     content: "You are not a member of this community. Please respect that by not downvoting. Have you considered subscribing?";
+    display: block;
+    max-width: 800px;
+    background-color: #613318;
+    padding: 5px 10px;
+    margin: 5px 305px 5px 0px;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: #fff;
+    font-size: medium;
+}
+
+
+/*==============Submmission and search boxes========================*/
+/* Submission Buttons */
+/* from /r/mindashq */
+.sidebox.submit {
+width: 300px;
+}
+body:not(.listing-page) .morelink {
+border-color: #000!important; 
+border-radius: 10px!important;
+background: none transparent;
+background-color: #008A17; 
+color: #fff; 
+}
+body:not(.listing-page) .morelink a {
+color: #fff!important; 
+text-shadow: 1px 1px 2px #000;
+}
+body .morelink {
+padding: 4px 10px;
+border-color: #000!important;
+border-radius: 10px!important;
+background: none transparent;
+background-color: #008A17;
+color: #fff;
+font-weight: normal;
+letter-spacing: 0;
+}
+body .morelink:hover,
+body:not(.listing-page) .morelink:hover {
+border-color: #000;
+background: none transparent;
+background-color: #fff; 
+color: #008A17; 
+}
+body .morelink a {
+color: #fff!important; /*#fff*/
+font-weight: bold;
+font-size: 16px;
+text-shadow: 1px 1px 2px #000;
+}
+body .morelink a:hover,
+body:not(.listing-page) .morelink:hover a,
+body:not(.listing-page) .morelink a:hover {
+color: #008A17!important;
+text-shadow: 1px 1px 2px #0f0f0f!important;
+}
+body .morelink .nub,
+body .morelink:hover .nub,
+body .disabled .morelink .nub,
+body .disabled .morelink:hover .nub {
+background: none transparent!important;
+}
+body .disabled .morelink,
+body .disabled .morelink:hover {
+border-color: #f5f5f5!important;
+background-color: #eee;
+background-image: none!important;
+}
+body .disabled .morelink a,
+body .disabled .morelink a:hover {
+color: #008A17!important;
+text-shadow: none!important;
+cursor: default!important;
+}
+
+/*Comment for posting things to check the new tab*/
+#link-desc, #text-desc {font-size: 0px;}
+#link-desc:after, #text-desc:after {
+display: block;
+font-weight: bold; 
+color: black;
+content: "Please check ye olde tab after posting to ensure that your message wasn't attacked by the nefarious spam monster!.";
+font-size: 12px;
+} 
+
+
+/***** Search box taken from /r/canada and modified*****/
+#search input[type="text"] {
+    margin-top: 5px;
+    height: 30px;
+    width: 300px;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: -1px;
+    text-align: center;
+    border: 1px solid #000!important;
+    outline: none;
+    text-shadow:0 1px 0 #fff;
+    color: #008A17!important;
+    border-radius: 10px;
+    }
+.res-nightmode #search input[type="text"] {
+    color: #ddd!important;
+    text-shadow:none;
+    background-color: #262626
+    }
+
+/* Kills the community button */
+.sidebox.create .morelink {
+display: none;
+}
+.sidebox.submit .spacer {
+display: none;
+}
+.sidebox.create .spacer {
+display: none;
+}
+
+
+/*=====================================*/
+/*Comments*/
+/*RES - excluding nightmode*/
+.res:not(.res-nightmode) .commentarea .comment {background-color:transparent!important;}
+.res:not(.res-nightmode) .commentarea .comment .comment {background-color:transparent!important;}
+.res:not(.res-nightmode) .commentarea .comment .comment .comment {background-color:transparent!important;}
+.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment {background-color:transparent!important;}
+.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment {background-color:transparent!important;}
+.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment {background-color:transparent!important;}
+.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment .comment {background-color:transparent!important;}
+.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment .comment .comment {background-color:transparent!important;}
+.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment {background-color:transparent!important;}
+.res:not(.res-nightmode) .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment{background-color:transparent!important;}
+ 
+/*RES - nightmode-specific*/
+.res-nightmode .commentarea .comment {background-color:ghostWhite!important;}
+.res-nightmode .commentarea .comment .comment {background-color:#cee3f8!important;}
+.res-nightmode .commentarea .comment .comment .comment {background-color:ghostWhite!important;}
+.res-nightmode .commentarea .comment .comment .comment .comment {background-color:#cee3f8!important;}
+.res-nightmode .commentarea .comment .comment .comment .comment .comment {background-color:ghostWhite!important;}
+.res-nightmode .commentarea .comment .comment .comment .comment .comment .comment {background-color:#cee3f8!important;}
+.res-nightmode .commentarea .comment .comment .comment .comment .comment .comment .comment {background-color:ghostWhite!important;}
+.res-nightmode .commentarea .comment .comment .comment .comment .comment .comment .comment .comment {background-color:#cee3f8!important;}
+.res-nightmode .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment {background-color:ghostWhite!important;}
+.res-nightmode .commentarea .comment .comment .comment .comment .comment .comment .comment .comment .comment .comment{background-color:#cee3f8!important;}
+
+
+
+/*============================================*/
+/*voting / thread score from /r/AskScience and modified*/
+.linkinfo {
+  width: 300px;
+  height: 122px;
+  padding: 0;
+  background: #FFF;
+  border: 1px solid #7A7A7A;
+  border-radius: 10px;
+}
+.linkinfo .date { /* post was submitted on ... */
+  margin: 0 5px;
+  padding: 5px 0;
+  border-bottom: 1px solid #7A7A7A;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+.linkinfo .date span {
+  font-size: 0;
+  color: #FFF;
+}
+.linkinfo .date span:after {
+  content: "This adventure started on ";
+  display: inline;
+  font-size: 12px;
+  font-weight: normal;
+  color: #111;
+}
+.linkinfo .score { /* post score (% like it) */
+  width: 95px;
+  margin: 7px 0 0 7px;
+  padding: 10px 0;
+  display: inline-block;
+  border: none;
+  font-size: 11px;
+  text-align: center;
+}
+.linkinfo .score .number {
+  display: block;
+  font-size: 20px;
+  font-weight: normal;
+}
+.linkinfo .score .word { 
+  display: none;
+}
+.linkinfo .upvotes,
+.linkinfo .downvotes { /* post upvotes/downvotes */
+  width: 95px;
+  padding: 10px 0;
+  display: inline-block;
+  border-left: 1px solid #7A7A7A;
+  font-size: 12px;
+  text-align: center;
+}
+.linkinfo .upvotes .number,
+.linkinfo .downvotes .number {
+  display: block;
+  position: relative;
+  top: 1px;
+  font-size: 20px;
+}
+.linkinfo .upvotes .word,
+.linkinfo .downvotes .word {
+  display: none;
+}
+.linkinfo .upvotes:after {
+  content: "thumbs up";
+  font-size: 11px;
+}
+.linkinfo .downvotes:after {
+  content: "thumbs down";
+  font-size: 11px;
+}
+.linkinfo .shortlink { /* shortlink */
+  margin-top: 0;
+  font-size: 0;
+  text-align: center;
+  visibility: hidden;
+}
+.linkinfo .shortlink input {
+  margin: 7px 0 2px 0;
+  border: 1px solid #7A7A7A;
+  border-radius: 5px;
+  font-size: 11px;
+  text-align: center;
+  visibility: visible;
+}
