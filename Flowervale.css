@@ -12,6 +12,55 @@
   color: #042eae;
   height: 500px;
 }
+
+/*============================Header===============================*/
+.redditname a {
+ color: #FFFFFF; 
+ font-size: 25px; 
+}
+.redditname a:hover {
+color: #FFFFFF; 
+text-decoration:none !important;
+}
+
+#header {
+    background:Gray url(%%stars1%%) repeat scroll center left!important;
+    border:none!important;
+    height:100px!important}
+#sr-header-area {
+    background-color: #fff;
+    opacity: 1;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-size: 90%;
+    height: 18px;
+    line-height: 18px;
+    z-index: 999;
+}
+#sr-header-area a.choice {
+    opacity: 1.0!important;
+    z-index: 999;
+}
+#sr-header-area a.choice:hover { 
+    text-decoration: underline;
+}
+.tabmenu {
+    position:absolute;
+    bottom:0px;
+}
+#header-bottom-left {
+    position:absolute;
+    bottom:0px;
+}
+#header {
+    background-color: #c6daed;   
+    border: 0px  #000000 solid !important;
+}
+#header-img {
+    margin-top: 2px;
+    margin-right: 5px;
+    margin-left:10px;
+}
 /*============================Body=================================*/
 /*Rounding out the tab corners*/
 .tabmenu li a {
@@ -21,10 +70,10 @@
 }
 
 /*background*/
-body {
+/*body {
     background: url(%%CHINESE-40%%) 
     no-repeat fixed center center
-}
+}*/
 
 /* Makes the user names bold and dusty brown. These colors are going to change I'm sure. */
 .thing .tagline a {
@@ -318,7 +367,7 @@ div.titlebox ul {
 .author[href$="/user/FullmetalCowgirl"] { color: purple !important; }
 .author[href$="/user/NeonGreenTiger"] { color: #006600 !important; }
 .author[href$="/user/AutoModerator"] { color: #FC0!important; }
-.author[href$="/user/SorryNoBiscuit"] { color: #000!important; }
+.author[href$="/user/tjrieves"] { color: #000!important; }
 
 .side .md h6 a:hover {
     text-decoration: underline;
@@ -581,4 +630,49 @@ display: none;
   font-size: 11px;
   text-align: center;
   visibility: visible;
+}
+
+/* highlight removed and spammed items for mods */ 
+body .content .sitetable .thing.spam, 
+body .sitetable .thing.spam.deleted.link.self { 
+    border: solid 5px #FA8072 !important; 
+    background: transparent; 
+} 
+body .content .sitetable .thing.spam, 
+body .sitetable .thing.spam.deleted.link.self { 
+    border: solid 5px #FA8072 !important; 
+    background: transparent; 
+} 
+/* Next section makes deleted messages less noticeable for users*/ 
+.deleted .grayed, 
+.deleted > .entry .expand, 
+.deleted > .entry .tagline { 
+    display: none 
+} 
+.deleted > .entry .noncollapsed:after { 
+    content: 'removed/deleted'; 
+    opacity: .25; 
+    color: #858585; 
+} 
+.gold-accent { 
+    border: 0 
+} 
+.formtabs-content { 
+    border: 0 
+} 
+.entry { 
+    padding: 5px 0px 10px 0px 
+} 
+.entry .tagline { 
+    margin-top: 5px 
+} 
+.entry .buttons li a { 
+    font-weight: normal 
+} 
+.link .entry li .comments { 
+    font-weight: bold 
+} 
+.entry .buttons li, 
+.entry .tagline { 
+    letter-spacing: 1px 
 }
